@@ -1,0 +1,6 @@
+body {
+    /* background-color: rgb(65, 62, 62); */
+    background-color:#030637;
+    font-smooth: antialiased;
+    scroll-behavior:smooth;
+}
