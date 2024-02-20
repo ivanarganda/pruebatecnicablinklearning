@@ -1,29 +1,4 @@
 <?php 
 
-// Definición de la función sumaArray
-function sumaArray($ar) {
-    // Inicialización de la variable suma
-    $suma = 0;
-    
-    // Iteración sobre los elementos del array
-    foreach ($ar as $elemento) {
-        // Verificar si el elemento es un array
-        if (is_array($elemento)) {
-            // Si es un array, llamar recursivamente a la función sumaArray
-            $suma += sumaArray($elemento);
-        } 
-        // Verificar si el elemento es numérico
-        elseif (is_numeric($elemento)) {
-            // Si es numérico, sumarlo a la variable suma
-            $suma += $elemento;
-        }
-    }
-    // Devolver la suma total
-    return $suma;
-}
 
-// Ejemplos de arrays
-$lista1 = [1, 4, 3, 0];
-$lista2 = [1, 2, [5, 8], 4];
-$lista3 = [0, [6, 2], null, 7, 1];
 ?>
