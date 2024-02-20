@@ -27,6 +27,7 @@ function sumaArray($ar) {
 $lista1 = [1, 4, 3, 0];
 $lista2 = [1, 2, [5, 8], 4];
 $lista3 = [0, [6, 2], null, 7, 1];
+
 ?>
 
 <!DOCTYPE html>
@@ -43,13 +44,13 @@ $lista3 = [0, [6, 2], null, 7, 1];
 </head>
 
 <body class="py-8">
-    <div class="max-w-3xl mx-auto p-4 bg-gray-100 shadow-md rounded-lg">
+    <div class="max-w-3xl w-full mt-20 p-4 bg-gray-800 shadow-md rounded-lg">
         <h2 class="text-2xl font-bold mb-4">Respuestas</h2>
-        <div class="mb-8">
-            <h3 class="text-xl font-semibold mb-2">1. Implementar la función en PHP sumaArray para calcular la suma de
+        <div class="mb-8 w-full">
+            <h3 class="text-xl font-semibold mb-2 w-full">1. Implementar la función en PHP sumaArray para calcular la suma de
                 los elementos de un array numérico:</h3>
-            <div class="flex flex-row gap-5">
-                <div class="flex flex-col">
+            <div class="flex flex-row gap-5 w-full">
+                <div class="flex flex-col w-1/2">
                     <p class="mb-4">Respuesta:</p>
                     <ul class="list-disc ml-6">
                         <li>Suma de lista1: <?php echo sumaArray($lista1); ?></li>
@@ -57,10 +58,15 @@ $lista3 = [0, [6, 2], null, 7, 1];
                         <li>Suma de lista3: <?php echo sumaArray($lista3); ?></li>
                     </ul>
                 </div>
-                <div class="editor-holder">
-                    
+                <div class="flex flex-col w-1/2 pl-2 bg-gray-700">
+                    <span class="mb-4 w-full flex flex-row">
+                        Codigo:
+                    </span>
+                    <div class="bg-gray-700 p-2 w-full h-full relative">
+                        <img src="<?php echo file_get_contents('./../assets/img/data1.txt') ?>" alt="code php: sumar arrays">
+                    </div>
                 </div>
-            </div>
+            </div>      
         </div>
         <div class="mb-8">
             <h3 class="text-xl font-semibold mb-2">2. ¿Cuál es la salida de este código: $i=0;while ($i=1) echo ++$i;?
